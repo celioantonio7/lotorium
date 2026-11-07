@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import MatrixRain from "./MatrixRain";
 import TechnologyMenu from "../ui/TechnologyMenu";
 import { site } from "../../data";
 export function ArcBridge() {
@@ -6,6 +7,7 @@ export function ArcBridge() {
  const finance=site.products.items.find(p=>p.name==="HappyCash Finance")!;
  const previews=[...site.projects,{id:"happycash-finance-preview",name:finance.name,category:finance.category,image:finance.image,imageFit:finance.imageFit}];
  return <div className="story-arc" aria-label="Da descoberta à entrega">
+   <MatrixRain />
    <div className="arc-project-stack" aria-hidden="true">
     {previews.map((project,i)=><div className="arc-preview-card" key={project.id} style={{"--preview-index":i} as React.CSSProperties}><span className="mono">0{i+1} / {project.category}</span><img src={project.image} alt="" loading="lazy" style={{objectFit:project.imageFit === "contain" ? "contain" : "cover"}}/><strong>{project.name}</strong></div>)}
    </div>

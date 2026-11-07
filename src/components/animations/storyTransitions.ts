@@ -32,6 +32,8 @@ export function setupStoryTransitions() {
   gsap.set(products,{autoAlpha:0,scale:.22,y:()=>innerHeight*.39,transformOrigin:"50% 0%",clipPath:viewportClip});
   gsap.set(productContent,{autoAlpha:0});
   const cards=gsap.utils.toArray<HTMLElement>(".arc-preview-card");
+  const rain=arc.querySelector<HTMLElement>(".arc-matrix")!;
+  gsap.set(rain,{autoAlpha:0,"--rain-running":"paused"});
   const stack=arc.querySelector<HTMLElement>(".arc-project-stack")!;
   const cardX=(i:number)=>i*Math.max(0,stack.clientWidth-cards[0].offsetWidth)/Math.max(1,cards.length-1);
   const cardY=(i:number)=>i*Math.max(0,arc.clientHeight*.86-cards[0].offsetHeight)/Math.max(1,cards.length-1);
@@ -41,7 +43,11 @@ export function setupStoryTransitions() {
    if(i) sequence.fromTo(card,{x:()=>cardX(i),y:()=>innerHeight,rotation:4},{x:()=>cardX(i),y:()=>cardY(i),rotation:0,duration:.7,ease:"none"},(i-1)*.75);
   });
   const wheelStart=(cards.length-1)*.75+.45;
-  sequence.to(stack,{scale:.5,y:-80,autoAlpha:0,duration:.65,ease:"none"},wheelStart)
+  sequence.set(rain,{"--rain-running":"running"},wheelStart+.25)
+   .to(rain,{autoAlpha:1,duration:.8,ease:"none"},wheelStart+.25)
+   .to(rain,{autoAlpha:0,duration:1.1,ease:"none"},wheelStart+6.5)
+   .set(rain,{"--rain-running":"paused"},wheelStart+7.65)
+   .to(stack,{scale:.5,y:-80,autoAlpha:0,duration:.65,ease:"none"},wheelStart)
    .fromTo(".story-arc-svg",{rotation:72,autoAlpha:0},{rotation:72,autoAlpha:1,duration:.35,ease:"none",transformOrigin:"50% 90.625%"},wheelStart+.45)
    .to(".story-arc-svg",{rotation:-72,duration:3.6,ease:"none",transformOrigin:"50% 90.625%"},wheelStart+.95)
    .to(".story-arc-svg",{rotation:0,duration:1.4,ease:"none"},wheelStart+4.55)
