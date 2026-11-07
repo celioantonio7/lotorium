@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 320 260" role="img" aria-label="Lotorium"><defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8FAFC"/><stop offset=".5" stop-color="#ACB3BD"/><stop offset="1" stop-color="#E2E8F0"/></linearGradient><linearGradient id="slate" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#717B86"/><stop offset="1" stop-color="#222B33"/></linearGradient></defs><g stroke-linejoin="round">
+<!-- ears -->
+<path d="M42 96 Q29 49 56 21 Q91 22 116 61 L105 112 Z" fill="#111920" stroke="#FFFFFF" stroke-width="9"/>
+<path d="M278 96 Q291 49 264 21 Q229 22 204 61 L215 112 Z" fill="#111920" stroke="#FFFFFF" stroke-width="9"/>
+<path d="M52 73 L59 37 L100 73 L90 98Z" fill="#FFFFFF"/>
+<path d="M268 73 L261 37 L220 73 L230 98Z" fill="#FFFFFF"/>
+<!-- crown -->
+<path d="M36 130 Q59 72 119 52 Q160 37 201 52 Q261 72 284 130 L255 174 L160 211 L65 174 Z" fill="#FFFFFF"/>
+<!-- silver mask chevron -->
+<path d="M15 153 L83 98 Q118 79 159 111 Q202 78 237 98 L305 153 L254 157 L209 131 L173 162 L159 171 L145 162 L111 131 L66 157Z" fill="#FFFFFF"/>
+<!-- dark mask -->
+<path d="M35 155 L81 133 L121 134 L159 174 L199 134 L239 133 L285 155 L246 190 L199 199 L160 224 L121 199 L74 190Z" fill="#10171E"/>
+<!-- cheek highlights -->
+<path d="M35 155 L85 144 L64 162 L113 188 L88 188 Z" fill="#FFFFFF"/>
+<path d="M285 155 L235 144 L256 162 L207 188 L232 188Z" fill="#FFFFFF"/>
+<!-- eyes -->
+<path d="M88 161 Q109 152 131 172 Q113 180 96 175Z" fill="#FFFFFF"/>
+<path d="M232 161 Q211 152 189 172 Q207 180 224 175Z" fill="#FFFFFF"/>
+<!-- nose -->
+<path d="M130 215 Q160 196 190 215 L179 232 Q160 245 141 232Z" fill="#F4F6F5"/>
+</g></svg>

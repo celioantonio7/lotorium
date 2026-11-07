@@ -1,0 +1,14 @@
+LOTORIUM | SVGs separados (identidade original verde-limão)
+
+01 Guaxinim: símbolo vetorial isolado
+02 Nome branco: aplicar em fundos escuros
+03 Nome escuro: aplicar em fundos claros
+04 Logo horizontal branco: guaxinim + nome
+05 Logo horizontal escuro: guaxinim + nome
+06 Logo vertical: símbolo sobre nome
+07 Favicon: apenas guaxinim, quadrado
+08 Símbolo monocromático
+
+Paleta: Charcoal #0B0D10 | Graphite #2E333A | Off White #F4F6F5 | Tech Green #A3FF3F
+
+Todos os SVGs têm fundo transparente. São redesenhos vetoriais aproximados da primeira identidade ilustrada, não uma vetorização idêntica pixel a pixel. A tipografia utiliza Inter/Manrope com fallback e permanece como texto editável.

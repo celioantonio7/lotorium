@@ -1,0 +1,895 @@
+{
+  "brand": {
+    "name": "Lotorium",
+    "tagline": "Inteligência para enxergar além do óbvio.",
+    "logo": "/assets/lotorium/04_logo_horizontal_branco.svg",
+    "mascot": "/assets/lotorium/mascote.png",
+    "symbol": "/assets/lotorium/01_guaxinim_simbolo.svg"
+  },
+  "seo": {
+    "title": "Lotorium | Software, design e inteligência",
+    "description": "Software sob medida, produtos digitais, automação e design. A Lotorium conecta criatividade e engenharia para construir o próximo.",
+    "siteUrl": "",
+    "socialImage": "/assets/lotorium/social.png"
+  },
+  "navigation": [
+    {
+      "label": "Sobre",
+      "href": "#sobre",
+      "caption": "O olhar por trás da ideia",
+      "icon": "compass"
+    },
+    {
+      "label": "Soluções",
+      "href": "#solucoes",
+      "caption": "Da complexidade à possibilidade",
+      "icon": "code"
+    },
+    {
+      "label": "Produtos",
+      "href": "#produtos",
+      "caption": "Ideias que já ganharam forma",
+      "icon": "box"
+    },
+    {
+      "label": "Processo",
+      "href": "#processo",
+      "caption": "Um caminho construído junto",
+      "icon": "workflow"
+    },
+    {
+      "label": "Contato",
+      "href": "#contato",
+      "caption": "Tudo começa com uma conversa",
+      "icon": "message"
+    }
+  ],
+  "hero": {
+    "eyebrow": "ESTÚDIO DE TECNOLOGIA & DESIGN",
+    "title": [
+      "O futuro não espera.",
+      "Nós construímos"
+    ],
+    "highlight": "o próximo.",
+    "description": "Transformamos desafios em experiências digitais, processos em automações inteligentes e ideias em softwares que impulsionam negócios.",
+    "primaryCta": "Vamos construir algo extraordinário",
+    "secondaryCta": "Explorar soluções",
+    "footnote": "DA PRIMEIRA IDEIA À PRÓXIMA EVOLUÇÃO",
+    "categories": [
+      "Software",
+      "Automação",
+      "Inteligência artificial",
+      "Design",
+      "Web"
+    ],
+    "technologyHints": [
+      "Aplicações e sistemas sob medida",
+      "Automação de tarefas e integrações",
+      "Inteligência conectada à operação",
+      "Identidade, interfaces e experiência",
+      "Sites rápidos e responsivos"
+    ]
+  },
+  "about": {
+    "eyebrow": "01 / SOBRE A LOTORIUM",
+    "title": "Não seguimos o óbvio.",
+    "highlight": "Criamos o que vem depois.",
+    "description": "A Lotorium nasce da união entre engenharia de software, pensamento criativo e uma visão simples: soluções digitais devem eliminar complexidade, não criar mais dela.",
+    "quote": "A curiosidade nos move. A inteligência nos diferencia.",
+    "pillars": [
+      {
+        "title": "Explorar",
+        "description": "Investigamos possibilidades e desafiamos limites.",
+        "icon": "compass"
+      },
+      {
+        "title": "Criar",
+        "description": "Transformamos ideias em soluções digitais com impacto real.",
+        "icon": "layers"
+      },
+      {
+        "title": "Evoluir",
+        "description": "Aprimoramos soluções para acompanhar novos desafios.",
+        "icon": "infinity"
+      }
+    ]
+  },
+  "solutions": {
+    "eyebrow": "02 / NOSSAS ESPECIALIDADES",
+    "title": "Tudo o que sua",
+    "highlight": "ideia precisa.",
+    "description": "Uma visão completa para negócios que querem construir, modernizar e crescer.",
+    "items": [
+      {
+        "title": "Software sob medida",
+        "description": "Sistemas personalizados para as necessidades do seu negócio.",
+        "detail": "Da descoberta do problema à entrega: aplicações web, sistemas internos, integrações e plataformas construídas para sua operação.",
+        "icon": "code",
+        "tags": [
+          "SISTEMAS",
+          "INTEGRAÇÕES"
+        ],
+        "deliverables": [
+          "Sistemas internos e plataformas web",
+          "Integrações entre ferramentas e dados",
+          "Painéis e fluxos para sua operação",
+          "Evolução e manutenção do produto"
+        ],
+        "bestFor": [
+          "Operações que precisam sair das planilhas",
+          "Processos com regras específicas",
+          "Equipes que precisam compartilhar informação"
+        ],
+        "examples": [
+          "happycash-erp"
+        ],
+        "approach": "Começamos entendendo o desafio e o contexto. A partir disso, definimos juntos o escopo, a experiência e a implementação. Cada projeto tem suas próprias necessidades; os itens abaixo são possibilidades de trabalho, ajustadas na descoberta."
+      },
+      {
+        "title": "SaaS & Produtos Digitais",
+        "description": "Ideias transformadas em soluções escaláveis.",
+        "detail": "Estratégia de produto, prototipação e desenvolvimento de plataformas que podem evoluir junto com seus usuários.",
+        "icon": "box",
+        "tags": [
+          "PRODUTO",
+          "PLATAFORMAS"
+        ],
+        "deliverables": [
+          "Descoberta e estratégia de produto",
+          "Protótipo navegável da experiência",
+          "Desenvolvimento do primeiro produto",
+          "Arquitetura para novas funcionalidades"
+        ],
+        "bestFor": [
+          "Uma ideia que precisa virar produto",
+          "Empresas criando uma nova plataforma",
+          "Produtos existentes que precisam evoluir"
+        ],
+        "examples": [
+          "happycash-erp"
+        ],
+        "approach": "Começamos entendendo o desafio e o contexto. A partir disso, definimos juntos o escopo, a experiência e a implementação. Cada projeto tem suas próprias necessidades; os itens abaixo são possibilidades de trabalho, ajustadas na descoberta."
+      },
+      {
+        "title": "Automação & IA",
+        "description": "Processos mais rápidos, inteligentes e integrados.",
+        "detail": "Conectamos ferramentas e desenhamos fluxos para reduzir tarefas repetitivas, organizar dados e apoiar decisões.",
+        "icon": "zap",
+        "tags": [
+          "FLUXOS",
+          "INTELIGÊNCIA"
+        ],
+        "deliverables": [
+          "Mapeamento dos processos e ferramentas",
+          "Integração de sistemas e serviços",
+          "Fluxos automáticos com regras claras",
+          "Assistentes e uso de dados no processo"
+        ],
+        "bestFor": [
+          "Rotinas manuais e repetitivas",
+          "Informações espalhadas entre sistemas",
+          "Atendimento e operação que precisam de integração"
+        ],
+        "examples": [
+          "happycash-erp"
+        ],
+        "approach": "Começamos entendendo o desafio e o contexto. A partir disso, definimos juntos o escopo, a experiência e a implementação. Cada projeto tem suas próprias necessidades; os itens abaixo são possibilidades de trabalho, ajustadas na descoberta."
+      },
+      {
+        "title": "Websites & Experiências Web",
+        "description": "Sites e landing pages que posicionam sua marca.",
+        "detail": "Experiências responsivas com atenção à navegação, acessibilidade, SEO e performance em cada tela.",
+        "icon": "monitor",
+        "tags": [
+          "WEBSITES",
+          "LANDING PAGES"
+        ],
+        "deliverables": [
+          "Direção visual e arquitetura de conteúdo",
+          "Design responsivo para cada tela",
+          "Desenvolvimento e microinterações",
+          "Acessibilidade e SEO técnico"
+        ],
+        "bestFor": [
+          "Marcas que precisam se apresentar melhor",
+          "Lançamento de produtos e serviços",
+          "Uma experiência web com identidade própria"
+        ],
+        "examples": [
+          "alex-vance",
+          "lucas-exe",
+          "rafael-monteiro",
+          "dra-isabella-ferro"
+        ],
+        "approach": "Começamos entendendo o desafio e o contexto. A partir disso, definimos juntos o escopo, a experiência e a implementação. Cada projeto tem suas próprias necessidades; os itens abaixo são possibilidades de trabalho, ajustadas na descoberta."
+      },
+      {
+        "title": "Branding & Design Digital",
+        "description": "Identidades e interfaces que marcam e geram resultado.",
+        "detail": "Identidade visual, sistemas de design e interfaces que conectam o posicionamento da marca à experiência de uso.",
+        "icon": "palette",
+        "tags": [
+          "IDENTIDADE",
+          "UI/UX"
+        ],
+        "deliverables": [
+          "Identidade visual e linguagem da marca",
+          "Design de interfaces e experiências",
+          "Biblioteca de componentes e padrões",
+          "Protótipos para validar a direção"
+        ],
+        "bestFor": [
+          "Uma nova marca ou reposicionamento",
+          "Interfaces que precisam de clareza",
+          "Produtos que precisam de consistência visual"
+        ],
+        "examples": [
+          "rafael-monteiro",
+          "alex-vance",
+          "dra-isabella-ferro"
+        ],
+        "approach": "Começamos entendendo o desafio e o contexto. A partir disso, definimos juntos o escopo, a experiência e a implementação. Cada projeto tem suas próprias necessidades; os itens abaixo são possibilidades de trabalho, ajustadas na descoberta."
+      }
+    ],
+    "modal": {
+      "eyebrow": "EXPLORE AS POSSIBILIDADES",
+      "deliverablesTitle": "O que podemos construir",
+      "bestForTitle": "Quando faz sentido",
+      "approachTitle": "Como construímos juntos",
+      "examplesTitle": "Projetos para conhecer",
+      "cta": "Conversar sobre esta solução",
+      "closeLabel": "Fechar modal",
+      "galleryCta": "Explorar projeto",
+      "scopeNote": "O escopo é definido a partir do desafio de cada projeto.",
+      "projectCta": "Visitar projeto",
+      "projectNotice": "Material disponível no portfólio. A imagem é identificada como tela ou identidade de acordo com o arquivo original."
+    }
+  },
+  "products": {
+    "eyebrow": "03 / ECOSSISTEMA LOTORIUM",
+    "title": "Também construímos",
+    "highlight": "nossas próprias ideias.",
+    "description": "Produtos digitais para resolver desafios de diferentes segmentos e negócios.",
+    "items": [
+      {
+        "name": "HappyCash",
+        "category": "GESTÃO COMERCIAL",
+        "description": "Sua operação inteira. Uma visão completa.",
+        "features": [
+          "PDV",
+          "Estoque",
+          "Fiado digital",
+          "Financeiro"
+        ],
+        "cta": "Conhecer HappyCash",
+        "url": "https://www.happycashsite.com.br/",
+        "image": "/assets/projects/happycashlogonovo.png",
+        "imageAlt": "Marca HappyCash ERP",
+        "accent": "#A3FF3F",
+        "previewLabel": "VISÃO GERAL",
+        "demo": false,
+        "imageFit": "contain",
+        "visualLabel": "IDENTIDADE DO PRODUTO"
+      },
+      {
+        "name": "HappyCash Finance",
+        "category": "ORGANIZAÇÃO FINANCEIRA",
+        "description": "Mais clareza para cada decisão financeira.",
+        "features": [
+          "Contas",
+          "Metas",
+          "Empréstimos"
+        ],
+        "cta": "Conversar sobre a solução",
+        "url": "#contato",
+        "image": "/assets/projects/favicon.png",
+        "imageAlt": "Símbolo do projeto de gestão financeira",
+        "accent": "#B7BAFF",
+        "previewLabel": "SUAS FINANÇAS",
+        "demo": false,
+        "imageFit": "contain",
+        "visualLabel": "IDENTIDADE DO PRODUTO"
+      },
+      {
+        "name": "HappyCash Agenda",
+        "category": "AGENDAMENTO & SERVIÇOS",
+        "description": "Sua agenda organizada. Seu tempo de volta.",
+        "features": [
+          "Agendamentos",
+          "Clientes",
+          "Serviços"
+        ],
+        "cta": "Conhecer Agenda",
+        "url": "#contato",
+        "image": "/assets/projects/favicon.ico",
+        "imageAlt": "Símbolo do sistema de agendamentos e serviços",
+        "accent": "#75DCCE",
+        "previewLabel": "SUA SEMANA",
+        "demo": false,
+        "imageFit": "contain",
+        "visualLabel": "IDENTIDADE DO PRODUTO"
+      }
+    ]
+  },
+  "automation": {
+    "eyebrow": "04 / AUTOMAÇÃO & INTELIGÊNCIA ARTIFICIAL",
+    "title": "Faça sua operação",
+    "highlight": "trabalhar de forma inteligente.",
+    "description": "Conectamos sistemas, automatizamos processos e aplicamos inteligência para ganhar tempo, reduzir atividades manuais e melhorar a eficiência.",
+    "benefits": [
+      {
+        "title": "Conecte o que está separado",
+        "description": "Integração entre ferramentas e sistemas.",
+        "icon": "link"
+      },
+      {
+        "title": "Automatize o que se repete",
+        "description": "Fluxos, cadastros, notificações e rotinas.",
+        "icon": "workflow"
+      },
+      {
+        "title": "Adicione inteligência ao processo",
+        "description": "Assistentes e análise inteligente de dados.",
+        "icon": "brain"
+      },
+      {
+        "title": "Transforme dados em decisões",
+        "description": "Informação organizada para sua operação.",
+        "icon": "chart"
+      }
+    ],
+    "nodes": [
+      "WhatsApp",
+      "Agenda",
+      "Banco de dados",
+      "Cloud",
+      "Dashboard"
+    ],
+    "centerLabel": "Inteligência conectada"
+  },
+  "web": {
+    "eyebrow": "05 / WEB & DESIGN",
+    "title": "Sua presença digital",
+    "highlight": "não deveria ser comum.",
+    "description": "Criamos websites e interfaces que unem estética, desempenho e intenção.",
+    "benefits": [
+      {
+        "title": "Identidade que marca",
+        "description": "Visual que transmite o valor da sua marca.",
+        "icon": "diamond"
+      },
+      {
+        "title": "Interação com propósito",
+        "description": "Movimentos que orientam a navegação.",
+        "icon": "pointer"
+      },
+      {
+        "title": "Performance desde a base",
+        "description": "Responsividade, acessibilidade e SEO técnico.",
+        "icon": "zap"
+      },
+      {
+        "title": "Design que conduz",
+        "description": "Uma jornada clara, do primeiro clique à conversa.",
+        "icon": "layers"
+      }
+    ],
+    "galleryTitle": "Ideias que ganharam forma.",
+    "galleryLabel": "PROJETOS SELECIONADOS",
+    "galleryDescription": "Uma seleção de experiências web e produtos do nosso portfólio.",
+    "featuredProjectId": "lotorium",
+    "deviceImages": {
+      "tablet": "/assets/projects/lotorium-tablet.png",
+      "phone": "/assets/projects/lotorium-phone.png"
+    },
+    "deviceCaption": "UMA EXPERIÊNCIA. TODAS AS TELAS."
+  },
+  "process": {
+    "eyebrow": "06 / NOSSO PROCESSO",
+    "title": "Da complexidade",
+    "highlight": "à clareza.",
+    "description": "Projetos bem construídos começam muito antes da primeira linha de código.",
+    "steps": [
+      {
+        "name": "Descoberta",
+        "title": "Entendemos o desafio.",
+        "description": "Escuta, contexto e as perguntas certas.",
+        "icon": "search"
+      },
+      {
+        "name": "Estratégia",
+        "title": "Definimos a direção.",
+        "description": "Prioridades, escopo e arquitetura.",
+        "icon": "target"
+      },
+      {
+        "name": "Design",
+        "title": "Criamos a experiência.",
+        "description": "Interfaces que traduzem a estratégia.",
+        "icon": "pen"
+      },
+      {
+        "name": "Desenvolvimento",
+        "title": "Desenvolvemos a solução.",
+        "description": "Engenharia, testes e atenção aos detalhes.",
+        "icon": "code"
+      },
+      {
+        "name": "Evolução",
+        "title": "Planejamos a evolução.",
+        "description": "Aprendizado contínuo e novos caminhos.",
+        "icon": "chart"
+      }
+    ]
+  },
+  "differences": {
+    "eyebrow": "07 / NOSSA FORMA DE PENSAR",
+    "title": "Tecnologia é ferramenta.",
+    "highlight": "Visão é o diferencial.",
+    "description": "Mais do que entregar código, unimos design, estratégia e engenharia para criar soluções que funcionam de verdade.",
+    "items": [
+      {
+        "title": "Design e engenharia conectados",
+        "description": "Experiência e tecnologia pensadas no mesmo produto.",
+        "icon": "layers"
+      },
+      {
+        "title": "Soluções orientadas ao problema",
+        "description": "A necessidade vem antes da escolha da ferramenta.",
+        "icon": "target"
+      },
+      {
+        "title": "Arquitetura com visão de futuro",
+        "description": "Estrutura para acompanhar o próximo passo.",
+        "icon": "box"
+      },
+      {
+        "title": "Transparência durante o projeto",
+        "description": "Etapas claras, contexto e comunicação direta.",
+        "icon": "users"
+      },
+      {
+        "title": "Ousadia com usabilidade",
+        "description": "Experiências marcantes, com atenção a quem usa.",
+        "icon": "star"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "08 / VAMOS CONVERSAR?",
+    "title": "Grandes ideias começam",
+    "highlight": "com uma conversa.",
+    "description": "Tem um projeto, uma ideia ou um processo que pode ser automatizado? Vamos conectar criatividade e engenharia para transformar possibilidades em soluções reais.",
+    "availability": "ABERTOS A NOVAS POSSIBILIDADES",
+    "email": "",
+    "whatsapp": "",
+    "endpoint": "",
+    "method": "POST",
+    "submitLabel": "Enviar mensagem",
+    "loadingLabel": "Enviando…",
+    "successMessage": "Mensagem enviada. Obrigado por compartilhar sua ideia com a Lotorium.",
+    "errorMessage": "Não foi possível enviar agora. Tente novamente em instantes.",
+    "unconfiguredMessage": "O envio ainda não está disponível. Seus dados continuam no formulário para você tentar novamente depois.",
+    "privacyNote": "Usaremos seus dados somente para responder à sua mensagem.",
+    "fields": {
+      "name": "Seu nome",
+      "email": "Seu e-mail",
+      "phone": "Seu WhatsApp",
+      "service": "Qual solução você procura?",
+      "message": "Conte um pouco sobre sua ideia…"
+    },
+    "services": [
+      "Software sob medida",
+      "SaaS & Produtos Digitais",
+      "Automação & IA",
+      "Website ou landing page",
+      "Branding & Design Digital",
+      "Quero descobrir as possibilidades"
+    ],
+    "messages": {
+      "required": "Preencha este campo.",
+      "email": "Informe um e-mail válido.",
+      "phone": "Informe um WhatsApp com DDD válido.",
+      "message": "Conte sua ideia em pelo menos 10 caracteres."
+    }
+  },
+  "footer": {
+    "note": "Feito com curiosidade. Construído com intenção.",
+    "copyright": "Lotorium. Todos os direitos reservados.",
+    "socials": []
+  },
+  "ui": {
+    "menuLabel": "Menu",
+    "closeMenu": "Fechar",
+    "menuEyebrow": "ESCOLHA SEU PRÓXIMO PASSO",
+    "menuDescription": "Software, design e inteligência. Conectados pelo mesmo olhar.",
+    "menuProductsLabel": "PRODUTOS DA CASA",
+    "menuStatus": "IDEIAS ABERTAS. POSSIBILIDADES TAMBÉM.",
+    "contactCta": "Vamos conversar",
+    "brandDescriptor": "SOFTWARE & DESIGN",
+    "footerEyebrow": "O PRÓXIMO NÃO SE CONSTRÓI SOZINHO.",
+    "footerTitle": "Vamos além.",
+    "footerCta": "Começar uma conversa",
+    "footerNavigationLabel": "EXPLORE",
+    "footerProductsLabel": "PRODUTOS",
+    "footerServicesLabel": "O QUE CRIAMOS",
+    "footerBackTop": "Voltar ao início",
+    "footerLocation": "BRASIL / CONECTADOS AO MUNDO",
+    "footerSignature": "CURIOSIDADE COMO INSTINTO.",
+    "transitionLabel": "UM NOVO PONTO DE VISTA.",
+    "loadingLabel": "PREPARANDO O PRÓXIMO",
+    "loadingCaption": "Curiosidade como ponto de partida.",
+    "skipIntro": "Pular abertura",
+    "processScrollLabel": "ROLE PARA CONSTRUIR O PRÓXIMO PASSO",
+    "processCompleteLabel": "DA IDEIA À EVOLUÇÃO",
+    "processStageLabel": "ETAPA",
+    "processProgressLabel": "PROGRESSO DO PROJETO"
+  },
+  "effects": {
+    "shader": {
+      "enabled": true,
+      "color": "#A3FF3F",
+      "speed": 1.1,
+      "opacity": 0.67,
+      "mobileOpacity": 0.42,
+      "maxPixelRatio": 1,
+      "variant": "dark-veil",
+      "brightness": 1.25,
+      "flow": 1.6,
+      "warp": 0.65,
+      "sheen": 0.45,
+      "glow": 0.7
+    },
+    "scroll": {
+      "scrub": 0.7,
+      "smoothDuration": 1.05,
+      "sectionDistance": 95,
+      "wordStagger": 0.025,
+      "menuTransitions": true
+    },
+    "footerWordmark": "Lotorium",
+    "preloader": {
+      "enabled": true,
+      "minimumDuration": 1100,
+      "timeout": 7000
+    },
+    "process": {
+      "pin": true,
+      "desktopScrollScreens": 4.2,
+      "mobileScrollScreens": 4,
+      "scrub": 0.65
+    },
+    "footerTechText": {
+      "speed": 1,
+      "reach": 180,
+      "specks": 15,
+      "draggable": true,
+      "clickKick": true,
+      "sweep": true
+    },
+    "heroTransition": {
+      "enabled": true,
+      "scrollScreens": 1.8,
+      "mobileScrollScreens": 1.25,
+      "signature": "Lotorium",
+      "caption": "CRIATIVIDADE QUE GANHA DIREÇÃO.",
+      "marquee": "IDEIAS • ENGENHARIA • DESIGN • INTELIGÊNCIA • "
+    },
+    "blink": {
+      "enabled": true,
+      "intervalMs": 2000,
+      "durationMs": 160,
+      "closedImage": "/assets/lotorium/mascote-eyes-closed.png"
+    }
+  },
+  "projects": [
+    {
+      "id": "lotorium",
+      "name": "Lotorium",
+      "category": "WEBSITE INSTITUCIONAL",
+      "image": "/assets/projects/lotorium-preview.png",
+      "imageAlt": "Página inicial da Lotorium com identidade verde, mascote e montanhas",
+      "imageFit": "cover",
+      "description": "O próprio site da Lotorium: identidade visual, interfaces em vidro, animações de rolagem e navegação responsiva.",
+      "url": "#inicio",
+      "tags": [
+        "Design",
+        "Website",
+        "Animação"
+      ],
+      "kind": "Website",
+      "featured": true,
+      "gallery": [
+        {
+          "src": "/assets/projects/lotorium/1.webp",
+          "alt": "Lotorium: Página inicial"
+        },
+        {
+          "src": "/assets/projects/lotorium/2.webp",
+          "alt": "Lotorium: Sobre a Lotorium"
+        },
+        {
+          "src": "/assets/projects/lotorium/3.webp",
+          "alt": "Lotorium: Soluções"
+        },
+        {
+          "src": "/assets/projects/lotorium/4.webp",
+          "alt": "Lotorium: Automação e IA"
+        },
+        {
+          "src": "/assets/projects/lotorium/5.webp",
+          "alt": "Lotorium: Contato"
+        }
+      ]
+    },
+    {
+      "id": "alex-vance",
+      "name": "Alex Vance",
+      "category": "PORTFÓLIO INTERATIVO",
+      "image": "/assets/projects/alexvance.png",
+      "imageAlt": "Captura do portfólio de cibersegurança Alex Vance",
+      "imageFit": "cover",
+      "description": "Portfólio de cibersegurança com linguagem de terminal, interações e identidade visual própria. Um projeto que transforma conteúdo técnico em uma experiência de navegação.",
+      "url": "https://portfoliohacker.vercel.app/#home",
+      "tags": [
+        "Website",
+        "Interação",
+        "Direção visual"
+      ],
+      "kind": "Website",
+      "featured": true,
+      "gallery": [
+        {
+          "src": "/assets/projects/alex-vance/1.webp",
+          "alt": "Alex Vance: Alex Vance"
+        },
+        {
+          "src": "/assets/projects/alex-vance/2.webp",
+          "alt": "Alex Vance: Segurança ofensiva com visão defensiva"
+        },
+        {
+          "src": "/assets/projects/alex-vance/3.webp",
+          "alt": "Alex Vance: Avaliações de segurança sob medida"
+        },
+        {
+          "src": "/assets/projects/alex-vance/4.webp",
+          "alt": "Alex Vance: Projetos Demonstrativos"
+        },
+        {
+          "src": "/assets/projects/alex-vance/5.webp",
+          "alt": "Alex Vance: Vamos avaliar a segurança do seu ambiente?"
+        }
+      ]
+    },
+    {
+      "id": "lucas-exe",
+      "name": "Lucas.exe",
+      "category": "EXPERIÊNCIA WEB",
+      "image": "/assets/projects/lucaslanding.png",
+      "imageAlt": "Tela de abertura do portfólio interativo Lucas.exe",
+      "imageFit": "cover",
+      "description": "Portfólio interativo com referências a terminais e sistemas retrô. Animações e transições fazem parte da apresentação do projeto.",
+      "url": "https://lucas-landingpage.vercel.app/",
+      "tags": [
+        "Portfólio",
+        "Animação",
+        "UI/UX"
+      ],
+      "kind": "Website",
+      "featured": false,
+      "gallery": [
+        {
+          "src": "/assets/projects/lucas-exe/1.webp",
+          "alt": "Lucas.exe: Página inicial"
+        },
+        {
+          "src": "/assets/projects/lucas-exe/2.webp",
+          "alt": "Lucas.exe: REGISTRO DE MISSÕES"
+        },
+        {
+          "src": "/assets/projects/lucas-exe/3.webp",
+          "alt": "Lucas.exe: ÁRVORE DE HABILIDADES"
+        },
+        {
+          "src": "/assets/projects/lucas-exe/4.webp",
+          "alt": "Lucas.exe: CENTRAL DE CONTROLE"
+        },
+        {
+          "src": "/assets/projects/lucas-exe/5.webp",
+          "alt": "Lucas.exe: TERMINAL DE COMUNICAÇÃO"
+        }
+      ]
+    },
+    {
+      "id": "rafael-monteiro",
+      "name": "Rafael Monteiro",
+      "category": "WEBSITE INSTITUCIONAL",
+      "image": "/assets/projects/rafaelmonteiro.png",
+      "imageAlt": "Identidade Rafael Monteiro utilizada na landing page",
+      "imageFit": "contain",
+      "description": "Landing page institucional com identidade editorial, animações e navegação fluida. O material exibido é a marca do projeto, disponível no portfólio.",
+      "url": "https://rafael-monteiro-landing.vercel.app/",
+      "tags": [
+        "Institucional",
+        "Design",
+        "Web"
+      ],
+      "kind": "Identidade do projeto",
+      "featured": false,
+      "gallery": [
+        {
+          "src": "/assets/projects/rafael-monteiro/1.webp",
+          "alt": "Rafael Monteiro: Sobre o profissional"
+        },
+        {
+          "src": "/assets/projects/rafael-monteiro/2.webp",
+          "alt": "Rafael Monteiro: Áreas de atuação"
+        },
+        {
+          "src": "/assets/projects/rafael-monteiro/3.webp",
+          "alt": "Rafael Monteiro: Equipe jurídica"
+        },
+        {
+          "src": "/assets/projects/rafael-monteiro/4.webp",
+          "alt": "Rafael Monteiro: Depoimentos"
+        },
+        {
+          "src": "/assets/projects/rafael-monteiro/5.webp",
+          "alt": "Rafael Monteiro: Contato"
+        }
+      ]
+    },
+    {
+      "id": "happycash-erp",
+      "name": "HappyCash ERP",
+      "category": "PRODUTO DIGITAL",
+      "image": "/assets/projects/happycashlogonovo.png",
+      "imageAlt": "Identidade visual do sistema HappyCash ERP",
+      "imageFit": "contain",
+      "description": "Gestão comercial com PDV, estoque, clientes, financeiro e relatórios. Um produto desenvolvido para reunir a operação em um único ambiente.",
+      "url": "https://www.happycashsite.com.br/",
+      "tags": [
+        "Software",
+        "SaaS",
+        "Gestão"
+      ],
+      "kind": "Marca do produto",
+      "featured": false,
+      "gallery": [
+        {
+          "src": "/assets/projects/happycash-erp/1.webp",
+          "alt": "HappyCash ERP: Página inicial"
+        },
+        {
+          "src": "/assets/projects/happycash-erp/2.webp",
+          "alt": "HappyCash ERP: Apresentação do sistema"
+        },
+        {
+          "src": "/assets/projects/happycash-erp/3.webp",
+          "alt": "HappyCash ERP: Visão do produto"
+        },
+        {
+          "src": "/assets/projects/happycash-erp/4.webp",
+          "alt": "HappyCash ERP: Recursos de gestão"
+        },
+        {
+          "src": "/assets/projects/happycash-erp/5.webp",
+          "alt": "HappyCash ERP: Operação simplificada"
+        }
+      ]
+    },
+    {
+      "id": "dra-isabella-ferro",
+      "name": "Dra. Isabella Ferro",
+      "category": "WEBSITE INSTITUCIONAL",
+      "image": "/assets/projects/drisabelle-preview.png",
+      "imageAlt": "Página da Dra. Isabella Ferro com apresentação de odontologia estética e harmonização facial",
+      "imageFit": "cover",
+      "description": "Site institucional de odontologia estética e harmonização facial, com apresentação da profissional, especialidades, resultados e contato para avaliações.",
+      "url": "https://celioantonio7.github.io/drisabelle/",
+      "tags": [
+        "Website",
+        "UI/UX",
+        "Animação"
+      ],
+      "kind": "Website",
+      "featured": false,
+      "gallery": [
+        {
+          "src": "/assets/projects/dra-isabella-ferro/1.webp",
+          "alt": "Dra. Isabella Ferro: A Arte de Criar Sorrisos & Harmonização Exclusivos."
+        },
+        {
+          "src": "/assets/projects/dra-isabella-ferro/2.webp",
+          "alt": "Dra. Isabella Ferro: Dra. Isabella Ferro."
+        },
+        {
+          "src": "/assets/projects/dra-isabella-ferro/3.webp",
+          "alt": "Dra. Isabella Ferro: Uma experiência além do procedimento."
+        },
+        {
+          "src": "/assets/projects/dra-isabella-ferro/4.webp",
+          "alt": "Dra. Isabella Ferro: Perguntas Frequentes."
+        },
+        {
+          "src": "/assets/projects/dra-isabella-ferro/5.webp",
+          "alt": "Dra. Isabella Ferro: Transformações que revelam confiança."
+        }
+      ]
+    }
+  ],
+  "visuals": {
+    "about": {
+      "src": "/assets/lotorium/about-raccoon.png",
+      "width": 1086,
+      "height": 1448
+    },
+    "left": {
+      "src": "/assets/lotorium/mountains-left.png",
+      "width": 1448,
+      "height": 1086
+    },
+    "center": {
+      "src": "/assets/lotorium/mountains-center.png",
+      "width": 1672,
+      "height": 941
+    },
+    "right": {
+      "src": "/assets/lotorium/mountains-right.png",
+      "width": 1448,
+      "height": 1086
+    },
+    "lava": {
+      "speed": 0.7,
+      "intensity": 0.8
+    },
+    "automation": {
+      "durations": [
+        1.4,
+        1.6,
+        1.8,
+        2,
+        2.2
+      ],
+      "pause": 0.25
+    },
+    "processRidge": [
+      0.934,
+      0.84,
+      0.705,
+      0.587,
+      0.244
+    ]
+  },
+  "storyTransitions": {
+    "arc": {
+      "eyebrow": "DO PRIMEIRO INSIGHT À ENTREGA",
+      "words": "DESCOBERTA • ANÁLISE • ESTRATÉGIA • DESIGN • ENGENHARIA • ENTREGA • ",
+      "caption": "Cada ideia encontra o seu caminho."
+    },
+    "curve": {
+      "eyebrow": "O PRÓXIMO PASSO",
+      "title": "Sua ideia merece",
+      "highlight": "sair do papel.",
+      "description": "Vamos transformar a próxima possibilidade em uma solução real.",
+      "cta": "Começar uma conversa",
+      "quote": "SEU PRÓXIMO PASSO MERECE UMA SOLUÇÃO À ALTURA.",
+      "signature": "Lotorium • software & design",
+      "ticker": "CLAREZA • POSSIBILIDADES • PRÓXIMO PASSO • ",
+      "rows": [
+        {
+          "label": "Conversar sobre uma ideia",
+          "href": "#contato"
+        },
+        {
+          "label": "Conhecer nossas soluções",
+          "href": "#solucoes"
+        },
+        {
+          "label": "Explorar nossos produtos",
+          "href": "#produtos"
+        }
+      ]
+    }
+  }
+}
