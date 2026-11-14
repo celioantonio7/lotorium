@@ -1,3 +1,4 @@
+import LandscapeAtmosphere from "../animations/LandscapeAtmosphere";
 import TerrainSides from "../ui/TerrainSides";
 import { useRef, useState, useEffect } from "react";
 import type { FormEvent } from "react";
@@ -78,6 +79,8 @@ export default function Contact() {
   }
   return (
     <section id="contato" className="section contact">
+      <img className="contact-landscape" src="./assets/lotorium/about-landscape.webp" width="1672" height="941" alt="" loading="lazy" decoding="async" aria-hidden="true" />
+      <LandscapeAtmosphere />
       <TerrainSides />
       <div className="contact-swoop" aria-hidden="true" />
       <div className="container contact-layout">
@@ -108,7 +111,7 @@ export default function Contact() {
             )}
           </div>
           <div className="contact-signature">
-            <img src={site.brand.symbol} width="85" height="70" alt="" />
+            <img src={site.brand.symbol} width="85" height="85" alt="" />
             <span>
               Boas perguntas.
               <br />

@@ -6442,7 +6442,7 @@ body {
 .web-layout > .terrain-sides .terrain-side { width:70%; bottom:-210px; opacity:.9; }
 .web-layout > .terrain-sides .terrain-side-left { left:-25%; }
 .web-layout > .terrain-sides .terrain-side-right { right:-25%; }
-.process-timeline::before { left:calc((100% - 100vw)/2); right:calc((100% - 100vw)/2); bottom:-80px; background-image:linear-gradient(#0b0d1066,#0b0d10b3),url('/assets/lotorium/mountains-right.png'); background-size:100% 100%,100% 450%; background-position:center,center bottom; background-repeat:no-repeat; }
+.process-timeline::before { left:calc((100% - 100vw)/2); right:calc((100% - 100vw)/2); bottom:-80px; background-image:linear-gradient(#0b0d1066,#0b0d10b3),url('/assets/lotorium/mountains-right.webp'); background-size:100% 100%,100% 450%; background-position:center,center bottom; background-repeat:no-repeat; }
 .process-step h3,.process-step h4,.process-step p { text-shadow:0 2px 8px #000,0 0 16px #000; }
 .solution-tags span,.product-features span,.portfolio-tags span { transition:background .2s,color .2s,border-color .2s; }
 .solution-tags span:hover,.product-features span:hover,.portfolio-tags span:hover { background:#a3ff3f1c; color:#d3ffa8; border-color:#a3ff3f66; }
@@ -6885,3 +6885,66 @@ body {
 @keyframes arc-matrix-fall { from { transform:translateY(-50%); } to { transform:translateY(0); } }
 @media(max-width:800px) { .arc-matrix-column:nth-child(even) { display:none; } .arc-matrix-column { font-size:11px; opacity:.18; } }
 @media(prefers-reduced-motion:reduce) { .arc-matrix { display:none; } .arc-matrix-column { animation:none; } }
+
+/* Reference scene: a continuous landscape behind the full character and foreground. */
+.about { isolation:isolate; min-height:890px; padding:115px 0 180px; background:#080e0c; overflow:hidden; }
+.about-background { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; z-index:-2; }
+.section.about::after { content:""; position:absolute; inset:0; width:100%; height:100%; transform:none; z-index:-1; pointer-events:none; background:linear-gradient(90deg,#060c0bc4 0%,#060c0b70 40%,transparent 72%),linear-gradient(180deg,#0b0d1066,transparent 24%,transparent 85%,#0b0d10); }
+.about > .about-layout { z-index:3; }
+.about-copy { width:53%; max-width:680px; }
+.about .section-heading h2 { font-size:clamp(30px,3.3vw,46px); }
+.about .description { max-width:590px; }
+.about-edge-raccoon { --raccoon-width:min(45vw,650px); position:absolute; width:var(--raccoon-width); right:-12px; top:0; z-index:1; }
+.about-edge-mountain { position:absolute; right:-1%; bottom:-210px; width:78%; height:auto; opacity:1; z-index:0; pointer-events:none; }
+.about .pillars { max-width:660px; gap:18px; }
+.about .pillars article { min-height:194px; padding:22px 18px; background:linear-gradient(145deg,#17251bbc,#0b1512c9); border-color:#92bd7438; border-radius:15px; box-shadow:0 14px 32px -16px #0009,inset 0 1px #ffffff08; backdrop-filter:blur(8px); }
+.about blockquote { max-width:660px; font-size:17px; }
+/* Soft alpha-shaped shadows; rectangular image bounds never cast a shadow. */
+.lava-image { box-shadow:none; }
+.hero-art .mascot { filter:drop-shadow(0 22px 38px #0007); }
+.shader-background > .dark-veil-container { mask-image:linear-gradient(90deg,#000b,#000); }
+@media(max-width:800px) {
+ .about { padding:85px 0 0; min-height:0; }
+ .about-copy { width:100%; max-width:none; }
+ .about-background { object-position:65% center; }
+ .section.about::after { background:linear-gradient(180deg,#080e0cdb 0%,#080e0c88 45%,transparent 75%,#0b0d10); }
+ .about-edge-raccoon { --raccoon-width:min(86vw,480px); position:relative; top:auto; right:-3%; margin:0 0 -8% auto; }
+ .about-edge-mountain { width:120%; right:-15%; bottom:-25px; }
+ .about .pillars { gap:10px; }
+ .about .pillars article { min-height:175px; padding:18px 13px; }
+ .about blockquote { font-size:15px; }
+}
+
+/* Keep the character and its footing in one coordinate system at every viewport. */
+.about-scene { position:absolute; width:min(78vw,1120px); aspect-ratio:1448 / 1086; right:-1%; top:clamp(100px,14.625vw,210px); bottom:auto; pointer-events:none; z-index:1; }
+.about-scene .about-edge-mountain { position:absolute; inset:0; width:100%; height:100%; opacity:1; z-index:0; }
+.about-scene .about-edge-raccoon { position:absolute; width:58.3%; right:0; top:-26%; margin:0; z-index:2; }
+.about-contact { position:absolute; height:2.6%; border-radius:50%; background:radial-gradient(ellipse,#020504e6 15%,#02050499 45%,transparent 72%); filter:blur(4px); transform:rotate(-16deg); z-index:1; }
+.about-contact-foot { left:55.5%; top:63.5%; width:16%; }
+.about-contact-hand { left:74%; top:65%; width:13%; }
+.about-scene .lava-image > img { image-rendering:auto; }
+.hero-scene { background-color:#0b0d10; }
+.shader-fallback { background:radial-gradient(ellipse at 76% 25%,#28441d70,transparent 62%),#0b0d10; }
+@media(max-width:800px) {
+ .about-scene { position:relative; width:min(140vw,750px); max-width:none; margin:60px 0 -8% calc(100% - min(140vw,750px)); right:-5%; top:auto; bottom:auto; }
+ .about-scene .about-edge-raccoon { width:58.3%; right:0; top:-26%; }
+}
+
+/* The artwork stays full resolution; only the transparent mist pass is low resolution. */
+.about-background-layer { position:absolute; inset:-24px; z-index:-2; pointer-events:none; }
+.about-background-layer .about-background { z-index:auto; }
+.landscape-atmosphere { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:0; mix-blend-mode:screen; }
+.landscape-atmosphere[hidden] { display:none; }
+.about-blink { aspect-ratio:1086 / 1448; }
+.about-blink > .lava-image { width:100%; height:100%; }
+.about-blink > .about-closed-eyes { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:0; z-index:2; mask-image:radial-gradient(ellipse 4.8% 2.5% at 51% 31.6%,#000 65%,transparent 100%),radial-gradient(ellipse 4.5% 2.5% at 62.8% 31.5%,#000 65%,transparent 100%); }
+.about-blink[data-blink-state="closed"] > .about-closed-eyes { opacity:1; }
+.contact-landscape { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.26; pointer-events:none; mask-image:linear-gradient(transparent,#000 25%,#000 75%,transparent); }
+.contact > .landscape-atmosphere { opacity:.65; }
+@media(prefers-reduced-motion:reduce) {
+ .about-scene,.about-background-layer { transform:none !important; }
+ .about-blink > .about-closed-eyes { display:none; }
+}
+
+/* Preserve the square transparent mark at every wordmark size. */
+.wordmark img { height:auto; object-fit:contain; }

@@ -108,7 +108,7 @@ export default function Header() {
       <header onFocusCapture={() => setHidden(false)} className={`header header-v2 ${scrolled ? "is-scrolled" : ""} ${hidden && !open ? "is-hidden" : ""}`}>
         <div className="header-shell">
           <a href="#inicio" className="wordmark" aria-label="Lotorium, início">
-            <img src={site.brand.symbol} alt="" width="43" height="36" />
+            <img src={site.brand.symbol} alt="" width="43" height="43" />
             <span>
               {site.brand.name.replace(/^l/i, "L")}
               <span className="wordmark-sub">{site.ui.brandDescriptor}</span>
@@ -197,7 +197,7 @@ export default function Header() {
                     <img
                       src={site.brand.symbol}
                       width="43"
-                      height="36"
+                      height="43"
                       alt=""
                     />
                     <span>{site.brand.name.replace(/^l/i, "L")}</span>
@@ -259,7 +259,7 @@ export default function Header() {
                     <img
                       src={site.brand.symbol}
                       width="200"
-                      height="164"
+                      height="200"
                       alt=""
                     />
                   </div>

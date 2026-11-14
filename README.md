@@ -22,12 +22,12 @@ Edite **`src/data/site.json`**. Não precisa alterar os componentes para mudar:
 
 - Textos, títulos, botões e serviços: objetos de cada seção.
 - Menu: `navigation`.
-- Mascote e identidade: `brand`. Coloque os arquivos em `public/assets/lotorium/` e use caminhos começando com `/assets/lotorium/`.
+- Mascote e identidade: `brand`. Coloque os arquivos em `public/assets/lotorium/` e use caminhos começando com `./assets/lotorium/`.
 - Produtos: `products.items`. Substitua `image` por um caminho de imagem, atualize `imageAlt`, `url` e defina `demo: false`. Enquanto `image` estiver vazio, será exibida uma interface demonstrativa desenhada em HTML/CSS.
 - Projetos de website: `projects` e `web.featuredProjectId`, com imagens, descrições e URLs dos materiais do portfólio.
 - Contato: `contact.email`, `contact.whatsapp` (código do país e DDD) e `contact.endpoint`.
 - Redes sociais: `footer.socials`, por exemplo `[{"label":"Instagram","url":"https://www.instagram.com/SEU_PERFIL"}]`.
-- SEO: `seo`. Antes de publicar, preencha `siteUrl` com a URL pública. Os metadados estáticos do `index.html` são sincronizados automaticamente antes de `npm run dev` e `npm run build`, inclusive para robôs sem JavaScript. Para compartilhamento social, a imagem `social.png` de 1200 × 630 já está configurada; troque `socialImage` se quiser usar outra.
+- SEO: `seo`. Antes de publicar, preencha `siteUrl` com a URL pública. Os metadados estáticos do `index.html` são sincronizados automaticamente antes de `npm run dev` e `npm run build`, inclusive para robôs sem JavaScript. Para compartilhamento social, a imagem `social.webp` de 1200 × 630 já está configurada; troque `socialImage` se quiser usar outra.
 
 As cores principais ficam no início de `src/styles/global.css`. A cor de cada produto fica em `products.items[].accent` no JSON.
 
@@ -121,3 +121,9 @@ As molduras de notebook, iPhone e tablet usam uma seleção do [Devices.css](htt
 - `storyTransitions.curve`: `quote`, `signature`, `rows` e `ticker` editam o quadro antes do Contato. A curva preta desenha a entrada e o quadro se expande para revelar o conteúdo.
 - O PNG do Sobre fica ancorado à borda da seção, compensando sua margem transparente de 16 px para encostar o desenho à área anterior à barra de rolagem.
 - O Processo agora usa somente a montanha `visuals.right`, em proporção natural e apoiada na base, com cartões de vidro e marcadores medidos pelo mesmo SVG. O mobile mantém a sequência vertical.
+
+## Publicação
+
+O site público fica em https://celioantonio7.github.io/lotorium/. Pushes em `main` executam o build e publicam `dist` pelo workflow `.github/workflows/deploy.yml`. O Vite usa a base `/lotorium/`; os assets configuráveis usam caminhos relativos para funcionar nesse subdiretório.
+
+Hero e Sobre usam `useSynchronizedBlink`: o mesmo relógio e os valores de `effects.blink` (intervalo de 2000 ms, fechamento de 160 ms). Entrar na viewport ou carregar uma imagem depois não reinicia a fase da piscada. As animações pausam fora da tela, com a aba oculta ou movimento reduzido.

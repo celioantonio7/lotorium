@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type HTMLAttributes } from "react";
+import { useEffect, useRef, useState, type HTMLAttributes } from "react";
 
 import "./DarkVeil.css";
 
@@ -304,6 +304,25 @@ export const DarkVeil = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const wakeRef = useRef<(() => void) | null>(null);
+  const [contextVersion, setContextVersion] = useState(0);
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const lost = (event: Event) => {
+      event.preventDefault();
+      canvas.style.visibility = "hidden";
+    };
+    const restored = () => {
+      canvas.style.visibility = "";
+      setContextVersion((version) => version + 1);
+    };
+    canvas.addEventListener("webglcontextlost", lost);
+    canvas.addEventListener("webglcontextrestored", restored);
+    return () => {
+      canvas.removeEventListener("webglcontextlost", lost);
+      canvas.removeEventListener("webglcontextrestored", restored);
+    };
+  }, []);
   const settings: Settings = {
     color: String(color),
     speed,
@@ -519,7 +538,7 @@ export const DarkVeil = ({
 
     const frame = (now: number) => {
       raf = 0;
-      if (!visible || document.hidden) return;
+      if (!visible || document.hidden || gl.isContextLost()) return;
       const s = settingsRef.current;
       const dt = last ? Math.min(0.05, (now - last) / 1000) : 1 / 60;
       last = now;
@@ -660,7 +679,7 @@ export const DarkVeil = ({
       gl.deleteVertexArray(vao);
       // Resources are deleted above; keep the canvas context reusable in React StrictMode.
     };
-  }, []);
+  }, [contextVersion]);
 
   useEffect(() => {
     wakeRef.current?.();

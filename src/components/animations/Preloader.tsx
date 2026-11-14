@@ -125,7 +125,7 @@ export default function Preloader({
             <circle cx="90" cy="90" r="82" />
             <circle cx="90" cy="90" r="70" />
           </svg>
-          <img src={site.brand.symbol} alt="" width="110" height="90" />
+          <img src={site.brand.symbol} alt="" width="110" height="110" />
         </div>
         <span className="intro-wordmark">
           {site.brand.name.replace(/^l/i, "L")}

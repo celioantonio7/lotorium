@@ -4,7 +4,7 @@ import { site } from "../../data";
 const greenMasks = new Map<string, HTMLCanvasElement>();
 
 /** Original transparent artwork, with animated light restricted to its green pixels. */
-export default function LavaImage({ variant, className = "" }: { variant: "about" | "left" | "center" | "right"; className?: string }) {
+export default function LavaImage({ variant, className = "" }: { variant: "about" | "aboutRocks" | "left" | "center" | "right"; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const art = site.visuals[variant];
   useEffect(() => {
@@ -44,7 +44,8 @@ export default function LavaImage({ variant, className = "" }: { variant: "about
     const sync = () => { stop(); if (visible && !reduced.matches && !img.src) img.src = art.src; if (ready && visible && !document.hidden && !reduced.matches) frame = requestAnimationFrame(draw); canvas.hidden = reduced.matches; };
     img.onload = () => {
       if (disposed || !ctx || !maskCtx) return;
-      const w = Math.min(innerWidth <= 800 ? 600 : 900, art.width), h = Math.round(w * art.height / art.width);
+      // Match the glow mask to the displayed pixels without enlarging the source artwork.
+      const w = Math.min(Math.ceil(host.clientWidth * Math.min(devicePixelRatio || 1, 2)), art.width), h = Math.round(w * art.height / art.width);
       const key = `${art.src}:${w}`;
       canvas.width = w; canvas.height = h;
       const cached = greenMasks.get(key);
@@ -68,5 +69,5 @@ export default function LavaImage({ variant, className = "" }: { variant: "about
     observer.observe(host); reduced.addEventListener("change",sync); document.addEventListener("visibilitychange",sync);
     return () => { disposed = true; stop(); observer.disconnect(); reduced.removeEventListener("change",sync); document.removeEventListener("visibilitychange",sync); canvas.remove(); img.onload = null; };
   }, [art]);
-  return <div ref={ref} className={`lava-image ${className}`} style={{ aspectRatio: `${art.width}/${art.height}`, "--lava-intensity": site.visuals.lava.intensity } as React.CSSProperties} aria-hidden="true"><img src={art.src} width={art.width} height={art.height} alt="" loading="lazy" /></div>;
+  return <div ref={ref} className={`lava-image ${className}`} style={{ aspectRatio: `${art.width}/${art.height}`, "--lava-intensity": site.visuals.lava.intensity } as React.CSSProperties} aria-hidden="true"><img src={art.src} width={art.width} height={art.height} alt="" loading="lazy" decoding="async" /></div>;
 }

@@ -35,7 +35,7 @@ export default function Footer() {
               <img
                 src={site.brand.symbol}
                 width="62"
-                height="51"
+                height="62"
                 alt="Símbolo da Lotorium"
               />
               <p>{site.brand.tagline}</p>
