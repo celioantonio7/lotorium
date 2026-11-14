@@ -80,11 +80,26 @@ export default function LandscapeAtmosphere() {
         frame=requestAnimationFrame(draw);
       }
     };
+    const lost = (event: Event) => {
+      event.preventDefault();
+      cancelAnimationFrame(frame); frame=0; last=0;
+      canvas.style.visibility="hidden";
+    };
+    const restored = () => {
+      // Context loss invalidates every GPU resource; rebuild on the next visible frame.
+      program=null; buffer=null; timeUniform=null; resolutionUniform=null;
+      canvas.style.visibility="";
+      sync();
+    };
+    canvas.addEventListener("webglcontextlost",lost);
+    canvas.addEventListener("webglcontextrestored",restored);
     const io=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync();});
     const ro=new ResizeObserver(resize); ro.observe(canvas); io.observe(canvas);
     reduced.addEventListener("change",sync); document.addEventListener("visibilitychange",sync); resize();
     return () => {
       cancelAnimationFrame(frame);io.disconnect();ro.disconnect();
+      canvas.removeEventListener("webglcontextlost",lost);
+      canvas.removeEventListener("webglcontextrestored",restored);
       reduced.removeEventListener("change",sync);document.removeEventListener("visibilitychange",sync);
       if(gl){gl.deleteBuffer(buffer);gl.deleteProgram(program);}
     };

@@ -361,6 +361,12 @@ export const DarkVeil = ({
     });
     if (!container || !canvas || !gl) return undefined;
 
+    const rendererInfo = gl.getExtension("WEBGL_debug_renderer_info");
+    const renderer = rendererInfo ? String(gl.getParameter(rendererInfo.UNMASKED_RENDERER_WEBGL)) : "";
+    const software = /SwiftShader|llvmpipe|softpipe/i.test(renderer);
+    // Software WebGL needs a smaller procedural pass; artwork and page text keep their resolution.
+    const maxFieldPixels = software ? 120000 : MAX_FIELD_PIXELS;
+    const maxOutputPixels = software ? 600000 : Infinity;
     const floatTargets = !!gl.getExtension("EXT_color_buffer_float");
     const fieldProgram = link(gl, FIELD);
     const compositeProgram = link(gl, COMPOSITE);
@@ -594,14 +600,14 @@ export const DarkVeil = ({
       const s = settingsRef.current;
       const width = Math.max(1, container.clientWidth);
       const height = Math.max(1, container.clientHeight);
-      const ratio = Math.min(s.dpr || window.devicePixelRatio || 1, 2);
+      const ratio = Math.min(s.dpr || window.devicePixelRatio || 1, 2, Math.sqrt(maxOutputPixels / (width * height)));
       view.width = width;
       view.height = height;
       canvas.width = Math.max(1, Math.round(width * ratio));
       canvas.height = Math.max(1, Math.round(height * ratio));
       let fieldScale = s.quality;
-      if (width * height * fieldScale * fieldScale > MAX_FIELD_PIXELS) {
-        fieldScale = Math.sqrt(MAX_FIELD_PIXELS / (width * height));
+      if (width * height * fieldScale * fieldScale > maxFieldPixels) {
+        fieldScale = Math.sqrt(maxFieldPixels / (width * height));
       }
       view.fieldWidth = Math.max(1, Math.round(width * fieldScale));
       view.fieldHeight = Math.max(1, Math.round(height * fieldScale));
